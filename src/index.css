@@ -1,0 +1,91 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: white;
+}
+
+.card {
+  display: grid !important;
+  grid-template-columns: auto auto;
+  width: 75vw;
+  margin-left: 8rem;
+  height: fit-content;
+  
+}
+
+.card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.carousel-image {
+  height: 250px;
+  width: 400px;
+}
+
+.price {
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.discount {
+  text-align: center;
+  color: crimson;
+}
+
+.cart-btn {
+  margin-left: 3rem;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+}
+.card-footer > .add-to-cart {
+  align-items: flex-start;
+}
+
+.card-footer > .quantity-select {
+  align-items: flex-end;
+}
+
+.quantity {
+  border: 1px solid;
+  width: 4rem;
+  text-align: center;
+  font-weight: bold;
+  margin: 1px;
+  border-radius: 8px;
+  height: 5vh;
+}
+
+.add-to-cart {
+  margin-left: 10rem;
+}
+
+#blink {
+  text-align: center;
+
+  animation: blinker 1.5s linear infinite;
+  color: red;
+  font-family: sans-serif;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
